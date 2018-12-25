@@ -1,0 +1,47 @@
+{
+    "name": "huenisys/bloom",
+    "description": "Use @vue/cli for your Laravel projects.",
+    "keywords": [
+        "laravel",
+        "template"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "huenisys",
+            "email": "paul@huenits.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "5.7.*"
+    },
+    "require-dev": {
+        "mockery/mockery": "~1.0",
+        "orchestra/database": "3.7.*",
+        "orchestra/testbench": "3.7.*",
+        "phpunit/phpunit": "~7.0",
+        "fzaninotto/faker": "1.8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "huenisys\\Bloom\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "huenisys\\Bloom\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "huenisys\\Bloom\\BloomServiceProvider"
+            ],
+            "aliases": {
+                "Bloom": "huenisys\\Bloom\\Bloom"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
